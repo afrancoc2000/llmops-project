@@ -14,7 +14,7 @@ outputs:
     type: string
     reference: ${cleansing.output}
 nodes:
-- name: NER_LLM
+- name: extract_entities
   type: llm
   source:
     type: code
@@ -34,4 +34,4 @@ nodes:
     type: code
     path: cleansing.py
   inputs:
-    entities_str: ${NER_LLM.output}
+    entities_str: ${extract_entities.output}
