@@ -25,7 +25,7 @@ nodes:
     text: ${inputs.text}
     entity_type: ${inputs.entity_type}
   provider: AzureOpenAI
-  connection: eastus2-azure-openai-connection
+  connection: Default_AzureOpenAI
   api: chat
   module: promptflow.tools.aoai
 - name: cleansing
